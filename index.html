@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Me Analysis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Help Me Analysis Logo" class="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="animation-container"></div>
+        <div class="hero-content">
+            <h1>Welcome to Help Me Analysis</h1>
+            <p>Your Data Analysis Support Community</p>
+            <button class="cta-button">Join Our Community</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="community-info">
+                <h3>Our Community</h3>
+                <p>Welcome to Help Me Analysis, a dedicated community for data analysis enthusiasts. We provide support, resources, and networking opportunities for anyone interested in data analysis, from beginners to experts.</p>
+            </div>
+            
+            <div class="founder-info">
+                <h3>Founder</h3>
+                <div class="founder-details">
+                    <h4>Ryo Hasegawa</h4>
+                    <p>BAIM Student at Purdue University West Lafayette</p>
+                    <p>As the founder of Help Me Analysis, I'm committed to creating a supportive environment where people can learn and grow in their data analysis journey. Feel free to reach out through the contact form below!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Help Me Analysis. All rights reserved.</p>
+    </footer>
+
+    <!-- Join Community Modal -->
+    <div id="joinModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Join Our Community</h2>
+            <form id="join-form">
+                <div class="form-group">
+                    <label for="nickname">Nickname *</label>
+                    <input type="text" id="nickname" name="nickname" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" name="age" min="13" max="120" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="discord">Discord Username *</label>
+                    <input type="text" id="discord" name="discord" 
+                           placeholder="Enter your Discord username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email (Optional)</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>
