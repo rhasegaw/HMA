@@ -369,3 +369,23 @@ footer {
         margin: 10% auto;
     }
 }
+/* Animation fade-in for sections */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Floating element hover effect */
+.floating-element {
+    transition: transform 0.3s ease;
+}
+
+.floating-element:hover {
+    transform: scale(1.2) !important;
+}
